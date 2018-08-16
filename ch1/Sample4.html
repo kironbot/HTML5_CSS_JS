@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>script test</title>
+    <script>
+      function calc() {
+        var w = document.getElementById("weight").value;
+        var h = document.getElementById("height").value;
+        var r = w / (h * h);
+        document.getElementById("result").textContent = "Your BMI is " + r + " .";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>BMI Calculation</h1>
+    Weight (kg) : <input id="weight" /> <br ./>
+    Height (m) : <input id="height" /> <br />
+    Calculation : <button onclick="calc()">Calculation</button>
+    <p id="result"></p>
+  </body>
+</html>
