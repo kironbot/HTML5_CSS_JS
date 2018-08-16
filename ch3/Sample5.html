@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sample5</title>
+  <style>
+    div {
+      color: green;
+    }
+  </style>
+  <script>
+    var colors = ["red", "blue", "yellow", "green"];
+    var index = 0;
+    function changeColor() {
+      document.getElementById("ufo").style.color = colors[index];
+      if (++index >= colors.length){
+        index = 0;
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="ufo"><(ooo)></div>
+  <button onclick="changeColor()">click me</button>
+</body>
+</html>

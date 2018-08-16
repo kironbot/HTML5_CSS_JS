@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function insertItem() {
+      var container = document.getElementById("container");
+      var item = document.createElement("li");
+      item.textContent = "hello";
+      container.appendChild(item);
+    }
+    function removeItem() {
+      var container = document.getElementById("container");
+      var item = container.lastChild;
+      if (item) {
+        container.removeChild(item);
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="insertItem()">insert</button>
+  <button onclick="removeItem()">delete</button>
+  <ol id="container"></ol>
+</body>
+</html>
